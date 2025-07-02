@@ -1,9 +1,9 @@
 :root{
     --cor-fundo: #000000 ;
     --cor-principal: hsl(0, 0%, 0%) ;
-    --cor-secundaria: #000000; 
-    --cor-destaque: #ffffff;
-    --cor-texto: #ffffff;
+    --cor-secundaria: #ffffff; 
+    --cor-destaque: #0059ff;
+    --cor-texto: #000000;
 
 }
 
