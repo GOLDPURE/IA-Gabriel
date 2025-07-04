@@ -1,14 +1,10 @@
-:root {
-    --cor-fundo: #121212;      /* Fundo escuro para destacar cores vivas */
-    --cor-principal: #2d2d2d;  /* Cinza escuro para o container */
-    --cor-secundaria: #FF5722; /* Laranja vibrante para botões */
-    --cor-destaque: #FFEB3B;   /* Amarelo brilhante para destaques */
-    --cor-texto: #ffffff;      /* Texto branco para contraste */
-    --cor-extra: #E91E63;      /* Rosa neon para elementos adicionais */
-    --cor-detalhe: #00BCD4;    /* Azul turquesa para detalhes */
-    
-    --borda-radius: 10px;
-    --espacamento: 1.8rem;
+:root{
+    --cor-fundo:  #2d3781;
+    --cor-principal: #212333 ;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #2bfd36;
+    --cor-texto: #D7F9FF;
+
 }
 
 body {
@@ -18,70 +14,30 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    }
+}
 
-.caixa-principal {
+.caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: var(--espacamento);
-    border-radius: var(--borda-radius);
-    box-shadow: 0 0 20px rgba(233, 30, 99, 0.3); /* Sombra rosa neon */
-    border: 2px solid var(--cor-detalhe); /* Borda azul turquesa */
+    padding: 20px;
 }
 
-h1 {
+h1{
     color: var(--cor-destaque);
-    margin-top: 0;
-    margin-bottom: var(--espacamento);
-    text-shadow: 0 0 10px rgba(255, 235, 59, 0.5); /* Brilho amarelo */
-    font-size: 2.5rem;
 }
 
 button {
     background-color: var(--cor-secundaria);
-    color: #000; /* Texto preto para melhor contraste com laranja */
+    color: var(--cor-texto);
     border: none;
-    border-radius: var(--borda-radius);
-    padding: 1rem 2rem;
-    transition: all 0.3s ease;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 0.5rem;
-    box-shadow: 0 4px 0 #BF360C; /* Sombra mais escura para efeito 3D */
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #FF7043; /* Laranja mais claro no hover */
-    transform: translateY(-3px);
-    box-shadow: 0 6px 0 #BF360C;
-}
-
-button:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 0 #BF360C;
-}
-
-.destaque-neon {
-    color: var(--cor-extra);
-    text-shadow: 0 0 8px rgba(233, 30, 99, 0.7);
-}
-
-/* Efeito de brilho para elementos importantes */
-.brilho {
-    animation: pulsar 2s infinite alternate;
-}
-
-@keyframes pulsar {
-    from {
-        text-shadow: 0 0 5px rgba(255, 235, 59, 0.5);
-    }
-    to {
-        text-shadow: 0 0 20px rgba(255, 235, 59, 0.9);
-    }
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
